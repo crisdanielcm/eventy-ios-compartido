@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1EC72542233F799C041BDE76 /* Pods_eventy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479FD1B701C1B7EFD00CE94A /* Pods_eventy.framework */; };
 		440193E11E74CBA800DA244E /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440193E01E74CBA800DA244E /* QRCode.framework */; };
+		4409AA1C1ECBF0A70023AC14 /* PrimeraParte.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4409AA1B1ECBF0A70023AC14 /* PrimeraParte.storyboard */; };
 		440C32F01E8AE90A00FC795C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440C32D91E8AE8F100FC795C /* Kingfisher.framework */; };
 		440C32F11E8AE90A00FC795C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 440C32D91E8AE8F100FC795C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4411E8BE1E52322200AB82F0 /* vista_10_editarRegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4411E8BD1E52322200AB82F0 /* vista_10_editarRegistroController.swift */; };
@@ -282,6 +283,7 @@
 /* Begin PBXFileReference section */
 		3C9CBE19F3AE20ED448A7573 /* Pods_eventyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eventyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		440193E01E74CBA800DA244E /* QRCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCode.framework; path = "../../../Library/Developer/Xcode/DerivedData/eventy-fyzyaxpyuptqtsadjtfrpaiyfufp/Build/Products/Debug-iphonesimulator/QRCode/QRCode.framework"; sourceTree = "<group>"; };
+		4409AA1B1ECBF0A70023AC14 /* PrimeraParte.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PrimeraParte.storyboard; sourceTree = "<group>"; };
 		440A46A21E10D97700038FC7 /* libRespokeSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRespokeSDK.a; path = "Pods/../build/Debug-iphoneos/libRespokeSDK.a"; sourceTree = "<group>"; };
 		440A46A31E10D97700038FC7 /* libRespokeSocket.IO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRespokeSocket.IO.a; path = "Pods/../build/Debug-iphoneos/libRespokeSocket.IO.a"; sourceTree = "<group>"; };
 		440A46A41E10D97700038FC7 /* libRespokeSocketRocket.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRespokeSocketRocket.a; path = "Pods/../build/Debug-iphoneos/libRespokeSocketRocket.a"; sourceTree = "<group>"; };
@@ -657,6 +659,7 @@
 				444D9A091E099C18005305B3 /* LaunchScreen.storyboard */,
 				444D99A71E098FCF005305B3 /* Main.storyboard */,
 				444D9A071E099737005305B3 /* Assets.xcassets */,
+				4409AA1B1ECBF0A70023AC14 /* PrimeraParte.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -976,6 +979,7 @@
 				44AE16DD1E66B67800E91249 /* popUpController.xib in Resources */,
 				444D9A0A1E099C18005305B3 /* LaunchScreen.storyboard in Resources */,
 				44A37AD01E6918B400232D9F /* vista_17_popupPrivadoController.xib in Resources */,
+				4409AA1C1ECBF0A70023AC14 /* PrimeraParte.storyboard in Resources */,
 				444D9A081E099737005305B3 /* Assets.xcassets in Resources */,
 				4432AAFC1E68C693002CFCFC /* vista_18_popUpterminosController.xib in Resources */,
 				44EA61901E403B94005FFBDE /* Listen.gif in Resources */,
