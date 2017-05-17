@@ -24,13 +24,13 @@ class splashController: UIViewController {
         let defaults = UserDefaults.standard
         let value = defaults.bool(forKey: "inicio")
         if(value){
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let storyBoard : UIStoryboard = UIStoryboard(name: "PrimeraParte", bundle:nil)
             let view = storyBoard.instantiateViewController(withIdentifier: "vistamenu") as! UINavigationController
             self.present(view, animated: true, completion: nil)
             
             
         }else{
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let storyBoard : UIStoryboard = UIStoryboard(name: "PrimeraParte", bundle:nil)
             let view = storyBoard.instantiateViewController(withIdentifier: "advertenciaVC") as! advertenciaController
             self.present(view, animated: true, completion: nil)
         }

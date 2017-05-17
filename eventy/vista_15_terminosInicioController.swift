@@ -42,7 +42,7 @@ class vista_15_terminosInicioController: UIViewController {
         if(check.currentImage == UIImage(named: "vista_1_check")){
             let defaults = UserDefaults.standard
             defaults.set(true, forKey: "inicio")
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let storyBoard : UIStoryboard = UIStoryboard(name: "PrimeraParte", bundle:nil)
             let view = storyBoard.instantiateViewController(withIdentifier: "vistamenu") as! UINavigationController
             self.present(view, animated: true, completion: nil)
         }else{
