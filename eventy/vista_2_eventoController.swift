@@ -10,7 +10,6 @@ import UIKit
 import Alamofire
 import Kingfisher
 import SwiftGifOrigin
-import Applozic
 
 class eventoController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -302,8 +301,8 @@ class eventoController: BaseViewController, UITableViewDelegate, UITableViewData
                 self.navigationController?.pushViewController(vistaEmpresas, animated: true)
             }
             if(indexPath.row == 4){
-                let chatManager : ALChatManager = ALChatManager(applicationKey: ALChatManager.applicationId as NSString)
-                chatManager.registerUserAndLaunchChat(getUserDetail(), fromController: self, forUser: nil)
+               
+                
             }
             if(indexPath.row == 5){
                 
@@ -345,21 +344,6 @@ class eventoController: BaseViewController, UITableViewDelegate, UITableViewData
         UINavigationBar.appearance().tintColor = UIColor.white
     }
     
-    func getUserDetail() -> ALUser {
-        
-        // TODO:Write your won code to get userId in case of update or in case of user is not registered....
-        
-        let user: ALUser = ALUser()
-        user.userId = ALUserDefaultsHandler.getUserId();
-        user.password = ALUserDefaultsHandler.getPassword()
-        user.displayName = ALUserDefaultsHandler.getDisplayName()
-        
-        user.applicationId = ALChatManager.applicationId;
-        if(!ALChatManager.isNilOrEmpty(ALUserDefaultsHandler.getEmailId() as NSString?)){
-            user.email = ALUserDefaultsHandler.getEmailId();
-        }
-        return user;
-    }
 }
 
 extension Date{

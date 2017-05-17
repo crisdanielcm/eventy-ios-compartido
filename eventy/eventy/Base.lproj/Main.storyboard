@@ -812,7 +812,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pXN-1T-HkS" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cdw-zw-yB2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Cdw-zw-yB2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -830,7 +830,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="giy-MC-B1H" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ITN-dL-4O3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ITN-dL-4O3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -843,8 +843,229 @@
             </objects>
             <point key="canvasLocation" x="5750" y="1506"/>
         </scene>
+        <!--Vista4 empresas Controller-->
+        <scene sceneID="Fw5-lO-vqW">
+            <objects>
+                <viewController storyboardIdentifier="empresas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NrB-0e-RDX" customClass="vista_4_empresasController" customModule="eventy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jrA-i5-Ddz"/>
+                        <viewControllerLayoutGuide type="bottom" id="FPO-8l-M7q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yod-oX-qZz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backheader" translatesAutoresizingMaskIntoConstraints="NO" id="bwU-hc-JXd">
+                                <rect key="frame" x="0.0" y="-2" width="375" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Empresas " textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLQ-kx-z4E">
+                                <rect key="frame" x="19" y="63" width="240" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="38"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="SEMINARIO DE ADVERTING" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZp-as-RCr">
+                                <rect key="frame" x="22" y="109" width="337" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1jU-Yd-FEU">
+                                <rect key="frame" x="0.0" y="190" width="375" height="477"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.54117647059999996" green="0.52941176469999995" blue="0.52941176469999995" alpha="0.73273168099999997" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellEmpresas" rowHeight="81" id="rJR-Hh-rMl" customClass="empresasTableViewCell" customModule="eventy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rJR-Hh-rMl" id="zcK-PQ-5D4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flecha" translatesAutoresizingMaskIntoConstraints="NO" id="3NK-KD-3zH">
+                                                    <rect key="frame" x="349" y="35" width="11" height="11"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Mercury Innovations Latam" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4c-sp-jvx">
+                                                    <rect key="frame" x="139" y="23" width="202" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.21176470589999999" green="0.20392156859999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="hby-DI-Fiu">
+                                                    <rect key="frame" x="0.0" y="79" width="375" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="04" translatesAutoresizingMaskIntoConstraints="NO" id="1H0-4E-hZ5">
+                                                    <rect key="frame" x="15" y="5" width="100" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="logo" destination="1H0-4E-hZ5" id="wlK-gO-rtU"/>
+                                            <outlet property="nombre" destination="S4c-sp-jvx" id="AOk-Xw-pfa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NrB-0e-RDX" id="Eex-96-otN"/>
+                                    <outlet property="delegate" destination="NrB-0e-RDX" id="o2E-O0-ieF"/>
+                                </connections>
+                            </tableView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Muestra Comercial" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IS8-9t-Iul">
+                                <rect key="frame" x="86" y="25" width="202" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ywT-Cp-Bvm">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="qku-z3-Gmd">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="D21-Gz-QfF">
+                                <rect key="frame" x="337" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="close_22"/>
+                                <connections>
+                                    <action selector="close:" destination="NrB-0e-RDX" eventType="touchUpInside" id="UxU-BB-eaX"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="evento" destination="GZp-as-RCr" id="fwB-Gz-Y0K"/>
+                        <outlet property="tableEmpresas" destination="1jU-Yd-FEU" id="na7-ON-Hem"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irX-FL-ZGv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7255" y="1506"/>
+        </scene>
+        <!--Vista5 asistentes Controller-->
+        <scene sceneID="bB1-HW-Ik8">
+            <objects>
+                <viewController storyboardIdentifier="asistentes" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Py-px-vpM" customClass="vista_5_asistentesController" customModule="eventy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aJJ-2S-RPe"/>
+                        <viewControllerLayoutGuide type="bottom" id="8XI-LA-iYG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dNm-IG-80O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backheader" translatesAutoresizingMaskIntoConstraints="NO" id="cw9-20-2PG">
+                                <rect key="frame" x="0.0" y="-2" width="375" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Asistentes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="URi-yc-eOL">
+                                <rect key="frame" x="23" y="63" width="240" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="38"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="SEMINARIO DE ADVERTING" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q6z-Nh-nIP">
+                                <rect key="frame" x="23" y="108" width="337" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qcI-F5-6zx">
+                                <rect key="frame" x="0.0" y="194" width="375" height="473"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cellAsistentes" rowHeight="81" id="7vo-nW-IIQ" customClass="asistentesTableViewCell" customModule="eventy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="81"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7vo-nW-IIQ" id="JAl-Md-psp">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Abelardo Plaza Sesamo" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLV-A9-CPa">
+                                                    <rect key="frame" x="88" y="22" width="180" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="owt-zP-9WT">
+                                                    <rect key="frame" x="0.0" y="79" width="375" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="03av" translatesAutoresizingMaskIntoConstraints="NO" id="Iha-AD-15E">
+                                                    <rect key="frame" x="21" y="19" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flecha" translatesAutoresizingMaskIntoConstraints="NO" id="2At-Sn-0Xa">
+                                                    <rect key="frame" x="335" y="35" width="24" height="11"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="logo" destination="Iha-AD-15E" id="gFg-Jx-pkM"/>
+                                            <outlet property="nombre" destination="cLV-A9-CPa" id="3Sr-0R-6kZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6Py-px-vpM" id="sis-XW-bGS"/>
+                                    <outlet property="delegate" destination="6Py-px-vpM" id="AJY-U2-zfL"/>
+                                </connections>
+                            </tableView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" scrollEnabled="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Networking" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPz-jL-Xmd">
+                                <rect key="frame" x="86" y="25" width="202" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ezQ-V9-Jbu">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="12i-W2-IES">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3QD-oF-DDd">
+                                <rect key="frame" x="337" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="close_22"/>
+                                <connections>
+                                    <action selector="close:" destination="6Py-px-vpM" eventType="touchUpInside" id="LJk-LU-w9R"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="evento" destination="q6z-Nh-nIP" id="9oR-id-YQ6"/>
+                        <outlet property="tableAsistentes" destination="qcI-F5-6zx" id="QSQ-7y-F0N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vEj-Im-2qV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7972" y="1505"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="03av" width="85" height="87"/>
+        <image name="04" width="172" height="71"/>
         <image name="Background-encuestas" width="750" height="1332"/>
         <image name="Background-preguntas" width="750" height="1335"/>
         <image name="Disclosure" width="12" height="22"/>
@@ -857,11 +1078,13 @@
         <image name="Next" width="44" height="42"/>
         <image name="QR" width="228" height="228"/>
         <image name="avatar" width="340" height="334"/>
+        <image name="backheader" width="749" height="381"/>
         <image name="botSesion" width="40" height="42"/>
         <image name="botedit" width="95" height="95"/>
         <image name="close_22" width="22" height="21"/>
         <image name="edicion" width="124" height="124"/>
         <image name="edicionover" width="110" height="110"/>
+        <image name="flecha" width="12" height="22"/>
         <image name="icon - Close" width="38" height="37"/>
         <image name="icon - Close - carne" width="38" height="37"/>
         <image name="iconmemo" width="51" height="71"/>

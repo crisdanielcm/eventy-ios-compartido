@@ -13,8 +13,6 @@
 		440C32F01E8AE90A00FC795C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440C32D91E8AE8F100FC795C /* Kingfisher.framework */; };
 		440C32F11E8AE90A00FC795C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 440C32D91E8AE8F100FC795C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4411E8BE1E52322200AB82F0 /* vista_10_editarRegistroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4411E8BD1E52322200AB82F0 /* vista_10_editarRegistroController.swift */; };
-		44153F0D1E8AC93A00FD9606 /* Applozic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44153F0C1E8AC7D200FD9606 /* Applozic.framework */; };
-		44153F0E1E8AC93A00FD9606 /* Applozic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44153F0C1E8AC7D200FD9606 /* Applozic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4419F7C31E423CF5006D81F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4419F7C11E423CF5006D81F6 /* BaseViewController.swift */; };
 		4419F7C41E423CF5006D81F6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4419F7C21E423CF5006D81F6 /* MenuViewController.swift */; };
 		4419F7E91E42453A006D81F6 /* navigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4419F7E81E42453A006D81F6 /* navigatorViewController.swift */; };
@@ -28,8 +26,6 @@
 		443802641E3E953A0083AA70 /* vista_3_advertenciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443802631E3E953A0083AA70 /* vista_3_advertenciaController.swift */; };
 		443802781E3EA8450083AA70 /* AdvertenciaPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443802771E3EA8450083AA70 /* AdvertenciaPageViewController.swift */; };
 		443802D31E3F84740083AA70 /* EqualizerEventy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 443802D21E3F84740083AA70 /* EqualizerEventy.gif */; };
-		443F46F11E87717500476DA5 /* ALChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443F46F01E87717500476DA5 /* ALChatManager.swift */; };
-		443F46F31E8772DA00476DA5 /* NSObject+ApplozicBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 443F46F21E8772DA00476DA5 /* NSObject+ApplozicBridge.m */; };
 		4444AB5A1EA5D98B0019DF9B /* terminoscController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4444AB591EA5D98B0019DF9B /* terminoscController.swift */; };
 		444B25161E4BEC680044761F /* vista_7_registroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444B25151E4BEC680044761F /* vista_7_registroController.swift */; };
 		444D99A41E098FCF005305B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D99A31E098FCF005305B3 /* AppDelegate.swift */; };
@@ -171,20 +167,6 @@
 			remoteGlobalIDString = D1ED2D341AD2D09F00CFC3EB;
 			remoteInfo = "Kingfisher-iOS";
 		};
-		44153F0B1E8AC7D200FD9606 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 44153F071E8AC7D100FD9606 /* Applozic.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6D6DF07D1BC535C800EBA00F;
-			remoteInfo = Applozic;
-		};
-		44153F0F1E8AC93A00FD9606 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 44153F071E8AC7D100FD9606 /* Applozic.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6D6DF07C1BC535C800EBA00F;
-			remoteInfo = Applozic;
-		};
 		444D99B81E098FCF005305B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 444D99981E098FCE005305B3 /* Project object */;
@@ -271,7 +253,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				44153F0E1E8AC93A00FD9606 /* Applozic.framework in Embed Frameworks */,
 				440C32F11E8AE90A00FC795C /* Kingfisher.framework in Embed Frameworks */,
 				444D9A011E0995A6005305B3 /* Alamofire.framework in Embed Frameworks */,
 			);
@@ -294,7 +275,6 @@
 		440A470A1E112B1E00038FC7 /* RespokeSocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RespokeSocketRocket.framework; path = "../../../Library/Developer/Xcode/DerivedData/eventy-fyzyaxpyuptqtsadjtfrpaiyfufp/Build/Products/Debug-iphonesimulator/RespokeSocketRocket/RespokeSocketRocket.framework"; sourceTree = "<group>"; };
 		440C32C21E8AE8F100FC795C /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = "Kingfisher-master/Kingfisher.xcodeproj"; sourceTree = "<group>"; };
 		4411E8BD1E52322200AB82F0 /* vista_10_editarRegistroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vista_10_editarRegistroController.swift; sourceTree = "<group>"; };
-		44153F071E8AC7D100FD9606 /* Applozic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Applozic.xcodeproj; path = Applozic/Applozic.xcodeproj; sourceTree = "<group>"; };
 		441991AD1E5DEF1300B3E378 /* AppRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppRTC.framework; path = "../../../Library/Developer/Xcode/DerivedData/eventy-fyzyaxpyuptqtsadjtfrpaiyfufp/Build/Products/Debug-iphonesimulator/AppRTC/AppRTC.framework"; sourceTree = "<group>"; };
 		441991AF1E5DEF1800B3E378 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SocketRocket.framework; path = "../../../Library/Developer/Xcode/DerivedData/eventy-fyzyaxpyuptqtsadjtfrpaiyfufp/Build/Products/Debug-iphonesimulator/SocketRocket/SocketRocket.framework"; sourceTree = "<group>"; };
 		4419F7A91E42308E006D81F6 /* SlideMenuControllerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SlideMenuControllerSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/eventy-fyzyaxpyuptqtsadjtfrpaiyfufp/Build/Products/Debug-iphonesimulator/SlideMenuControllerSwift/SlideMenuControllerSwift.framework"; sourceTree = "<group>"; };
@@ -314,8 +294,6 @@
 		443802A91E3F81BC0083AA70 /* SwiftGifOrigin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftGifOrigin.framework; path = "../../../Library/Developer/Xcode/DerivedData/eventy-fyzyaxpyuptqtsadjtfrpaiyfufp/Build/Products/Debug-iphonesimulator/SwiftGifOrigin/SwiftGifOrigin.framework"; sourceTree = "<group>"; };
 		443802D21E3F84740083AA70 /* EqualizerEventy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EqualizerEventy.gif; sourceTree = "<group>"; };
 		443F46B81E8762E300476DA5 /* Applozic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Applozic.framework; path = "../../../Library/Developer/Xcode/DerivedData/eventy-fyzyaxpyuptqtsadjtfrpaiyfufp/Build/Products/Debug-iphonesimulator/Applozic/Applozic.framework"; sourceTree = "<group>"; };
-		443F46F01E87717500476DA5 /* ALChatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALChatManager.swift; sourceTree = "<group>"; };
-		443F46F21E8772DA00476DA5 /* NSObject+ApplozicBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ApplozicBridge.m"; sourceTree = "<group>"; };
 		4444AB591EA5D98B0019DF9B /* terminoscController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = terminoscController.swift; sourceTree = "<group>"; };
 		444B25151E4BEC680044761F /* vista_7_registroController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vista_7_registroController.swift; sourceTree = "<group>"; };
 		444D99A01E098FCF005305B3 /* eventy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -333,7 +311,6 @@
 		444D99D41E099087005305B3 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		444D9A071E099737005305B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		444D9A091E099C18005305B3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		446075AA1E885335003A2BD7 /* NSObject+ApplozicBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ApplozicBridge.h"; sourceTree = "<group>"; };
 		449074411E59538400AC9FC1 /* vista_12_memoriasArchivosController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vista_12_memoriasArchivosController.swift; sourceTree = "<group>"; };
 		4492118A1E4D7FCB00E6EAD7 /* vista_8_carneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vista_8_carneController.swift; sourceTree = "<group>"; };
 		4499D3711E53F5FF00D4534A /* agendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = agendaTableViewCell.swift; sourceTree = "<group>"; };
@@ -392,7 +369,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				44D68D0A1E7B395400380C9C /* CallKit.framework in Frameworks */,
-				44153F0D1E8AC93A00FD9606 /* Applozic.framework in Frameworks */,
 				440193E11E74CBA800DA244E /* QRCode.framework in Frameworks */,
 				44F83F731E73A14200422CC6 /* Toast_Swift.framework in Frameworks */,
 				44FD54901E5E24E50093782E /* SwiftGifOrigin.framework in Frameworks */,
@@ -494,14 +470,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		44153F081E8AC7D100FD9606 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				44153F0C1E8AC7D200FD9606 /* Applozic.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		4419F7D71E423CF9006D81F6 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,20 +507,9 @@
 			name = gif;
 			sourceTree = "<group>";
 		};
-		443F46CC1E87649900476DA5 /* AppLozic */ = {
-			isa = PBXGroup;
-			children = (
-				443F46F01E87717500476DA5 /* ALChatManager.swift */,
-				443F46F21E8772DA00476DA5 /* NSObject+ApplozicBridge.m */,
-				446075AA1E885335003A2BD7 /* NSObject+ApplozicBridge.h */,
-			);
-			name = AppLozic;
-			sourceTree = "<group>";
-		};
 		444D99971E098FCE005305B3 = {
 			isa = PBXGroup;
 			children = (
-				443F46CC1E87649900476DA5 /* AppLozic */,
 				44FA226B1E0B204600307147 /* fonts */,
 				444D9A061E0996FE005305B3 /* Views */,
 				444D9A051E0996ED005305B3 /* Controller */,
@@ -561,7 +518,6 @@
 				444D99C51E098FCF005305B3 /* eventyUITests */,
 				444D99A11E098FCF005305B3 /* Products */,
 				440C32C21E8AE8F100FC795C /* Kingfisher.xcodeproj */,
-				44153F071E8AC7D100FD9606 /* Applozic.xcodeproj */,
 				444D99D41E099087005305B3 /* Alamofire.xcodeproj */,
 				C601A24FD00406DFF3E1AD37 /* Pods */,
 				29C376BDBA11748FA44C48A6 /* Frameworks */,
@@ -719,7 +675,6 @@
 			dependencies = (
 				444D99FF1E099573005305B3 /* PBXTargetDependency */,
 				444D9A031E0995A6005305B3 /* PBXTargetDependency */,
-				44153F101E8AC93A00FD9606 /* PBXTargetDependency */,
 				440C32F31E8AE90A00FC795C /* PBXTargetDependency */,
 			);
 			name = eventy;
@@ -808,10 +763,6 @@
 				{
 					ProductGroup = 444D99D51E099087005305B3 /* Products */;
 					ProjectRef = 444D99D41E099087005305B3 /* Alamofire.xcodeproj */;
-				},
-				{
-					ProductGroup = 44153F081E8AC7D100FD9606 /* Products */;
-					ProjectRef = 44153F071E8AC7D100FD9606 /* Applozic.xcodeproj */;
 				},
 				{
 					ProductGroup = 440C32C31E8AE8F100FC795C /* Products */;
@@ -910,13 +861,6 @@
 			fileType = wrapper.cfbundle;
 			path = "KingfisherTests-macOS.xctest";
 			remoteRef = 440C32EE1E8AE8F100FC795C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		44153F0C1E8AC7D200FD9606 /* Applozic.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Applozic.framework;
-			remoteRef = 44153F0B1E8AC7D200FD9606 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		444D99E01E099099005305B3 /* Alamofire.framework */ = {
@@ -1076,7 +1020,6 @@
 				4419F7C41E423CF5006D81F6 /* MenuViewController.swift in Sources */,
 				44BF7CB71E481B3B00846179 /* vista_6_traductorController.swift in Sources */,
 				44CC68741E48CF8B0062A339 /* empresasTableViewCell.swift in Sources */,
-				443F46F11E87717500476DA5 /* ALChatManager.swift in Sources */,
 				44AE16D91E666EBF00E91249 /* preguntasTableViewCell.swift in Sources */,
 				44CC68881E48FED70062A339 /* asistentesTableViewCell.swift in Sources */,
 				443802641E3E953A0083AA70 /* vista_3_advertenciaController.swift in Sources */,
@@ -1089,7 +1032,6 @@
 				44D16E491E65344600ACB406 /* encuestaPageViewController.swift in Sources */,
 				4444AB5A1EA5D98B0019DF9B /* terminoscController.swift in Sources */,
 				4432AAFB1E68C693002CFCFC /* vista_18_popUpterminosController.swift in Sources */,
-				443F46F31E8772DA00476DA5 /* NSObject+ApplozicBridge.m in Sources */,
 				4427A9D61E3B07350075FFC3 /* actividadesTableViewCell.swift in Sources */,
 				442473C31E39C96D00EA1F37 /* evento1TableViewCell.swift in Sources */,
 				4492118B1E4D7FCB00E6EAD7 /* vista_8_carneController.swift in Sources */,
@@ -1121,11 +1063,6 @@
 			isa = PBXTargetDependency;
 			name = "Kingfisher-iOS";
 			targetProxy = 440C32F21E8AE90A00FC795C /* PBXContainerItemProxy */;
-		};
-		44153F101E8AC93A00FD9606 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Applozic;
-			targetProxy = 44153F0F1E8AC93A00FD9606 /* PBXContainerItemProxy */;
 		};
 		444D99B91E098FCF005305B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
