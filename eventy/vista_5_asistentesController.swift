@@ -116,8 +116,7 @@ class vista_5_asistentesController: BaseViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let chatManager : ALChatManager = ALChatManager(applicationKey: ALChatManager.applicationId as NSString)
-        chatManager.launchChatForUser("\(listAsistentes[indexPath.row]["id"] as! Int)", fromViewController: self)
+       
     }
     
     func configureCell(cell: asistentesTableViewCell, indexPath: NSIndexPath){

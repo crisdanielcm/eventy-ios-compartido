@@ -9,7 +9,6 @@
 import UIKit
 import Alamofire
 import Toast_Swift
-import Applozic
 
 class vista_17_popupPrivadoController: UIViewController {
 
@@ -97,9 +96,7 @@ class vista_17_popupPrivadoController: UIViewController {
             preferences.set(id_empresa, forKey: "id_empresa:\(id_evento)")
             preferences.set(nombre_empresa, forKey: "nombre_empresa:\(id_evento)")
             preferences.synchronize()
-            
-            registrarUsuario(id: "\(id)", nombre: nombre, correo: email, imagen: foto)
-            
+                        
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vistaEdicion = storyboard.instantiateViewController(withIdentifier: "edicionRegistro") as! vista_10_agendaController
             vistaEdicion.usuario = usuario
@@ -116,31 +113,4 @@ class vista_17_popupPrivadoController: UIViewController {
             print(error)
         }
     }
-    
-    func registrarUsuario(id:String, nombre:String, correo:String, imagen:String){
-        
-        let user : ALUser = ALUser();
-        user.applicationId = ALChatManager.applicationId
-        user.userId = id
-        user.displayName = nombre
-        user.email = correo
-        user.password = "1234"
-        user.imageLink = imagen
-        ALUserDefaultsHandler.setUserId(user.userId)
-        ALUserDefaultsHandler.setDisplayName(user.displayName)
-        ALUserDefaultsHandler.setEmailId(user.email)
-        ALUserDefaultsHandler.setPassword(user.password)
-        ALUserDefaultsHandler.setProfileImageLink(user.imageLink)
-        
-        let chatManager = ALChatManager(applicationKey: ALChatManager.applicationId as NSString)
-        chatManager.registerUser(user){ (response, error) in
-            if (error == nil)
-            {
-               print("error")
-            }
-        }
-        
-    }
-   
-
 }
