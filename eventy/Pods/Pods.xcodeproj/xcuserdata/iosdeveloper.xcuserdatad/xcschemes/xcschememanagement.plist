@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-eventy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>QRCode.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftGifOrigin.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Toast-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1907A83720A17872B2857AFFD751BABD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2AAA7ABAA6816791CA6E0A0641DA8D13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B69D5CACBDB8EA33ABB8E7E2706726F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D3D1D346318867E36930A853DAE7A164</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

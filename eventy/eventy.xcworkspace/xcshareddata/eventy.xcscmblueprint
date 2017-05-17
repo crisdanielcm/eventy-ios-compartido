@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "80584B63C369775E4F9C1D652E2AE899901248FA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : 9223372036854775807,
+    "80584B63C369775E4F9C1D652E2AE899901248FA" : 9223372036854775807,
+    "67620B5EFA902936DF04070AF595B76AB0333747" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5E64B4E7-D257-4619-86EB-E3090B573F52",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : "eventy-ios\/eventy\/Kingfisher\/",
+    "80584B63C369775E4F9C1D652E2AE899901248FA" : "eventy-ios\/",
+    "67620B5EFA902936DF04070AF595B76AB0333747" : "eventy-ios\/eventy\/Alamofire\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "eventy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "eventy\/eventy.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/onevcat\/Kingfisher.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aplikoapps\/evento-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "80584B63C369775E4F9C1D652E2AE899901248FA"
+    }
+  ]
+}

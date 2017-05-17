@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+use_frameworks!
+
+target 'eventy' do
+  
+  pod 'SwiftGifOrigin', '~> 1.6.1'
+  platform :ios, '8.0'
+  pod 'Toast-Swift', '~> 2.0.0'
+  pod 'QRCode'
+end
