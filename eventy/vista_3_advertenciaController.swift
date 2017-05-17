@@ -26,7 +26,7 @@ class advertenciaController: UIViewController, UIPageViewControllerDataSource, U
         super.viewDidLoad()
 
         // Setup the pages
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyboard = UIStoryboard(name: "PrimeraParte", bundle: nil)
         let page1: UIViewController! = storyboard.instantiateViewController(withIdentifier: "AdvertenciaPage")
         
         let page2: UIViewController! = storyboard.instantiateViewController(withIdentifier: "AdvertenciaPage")

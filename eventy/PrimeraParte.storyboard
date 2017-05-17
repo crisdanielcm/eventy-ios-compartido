@@ -11,30 +11,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Splash Controller-->
-        <scene sceneID="fk1-8k-WQw">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RD6-Z8-3QO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="dU3-pD-IEf" customClass="splashController" customModule="eventy" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UaY-KR-8Yb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2Dx-dL-4g4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="svv-4c-ook">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backsplash" translatesAutoresizingMaskIntoConstraints="NO" id="Hk4-6C-FHH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.064089004350000006" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="-4599" y="90"/>
-        </scene>
         <!--Advertencia Controller-->
         <scene sceneID="hLn-UH-EYX">
             <objects>
@@ -897,7 +873,6 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
         <image name="Next" width="44" height="42"/>
         <image name="PLAY" width="201" height="201"/>
         <image name="backLogo" width="626" height="870"/>
-        <image name="backsplash" width="750" height="1334"/>
         <image name="barravolumen" width="662" height="40"/>
         <image name="botNext" width="750" height="157"/>
         <image name="close_22" width="22" height="21"/>

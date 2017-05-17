@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TYr-bq-q92">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1062,6 +1062,30 @@
             </objects>
             <point key="canvasLocation" x="7972" y="1505"/>
         </scene>
+        <!--Splash Controller-->
+        <scene sceneID="fO1-dc-orN">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1PV-0s-dAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="TYr-bq-q92" customClass="splashController" customModule="eventy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FGL-U7-j6U"/>
+                        <viewControllerLayoutGuide type="bottom" id="AcB-8S-pe9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m6t-kT-6Ir">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backsplash" translatesAutoresizingMaskIntoConstraints="NO" id="Y91-gD-ngo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.064089004350000006" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4902" y="90"/>
+        </scene>
     </scenes>
     <resources>
         <image name="03av" width="85" height="87"/>
@@ -1079,6 +1103,7 @@
         <image name="QR" width="228" height="228"/>
         <image name="avatar" width="340" height="334"/>
         <image name="backheader" width="749" height="381"/>
+        <image name="backsplash" width="750" height="1334"/>
         <image name="botSesion" width="40" height="42"/>
         <image name="botedit" width="95" height="95"/>
         <image name="close_22" width="22" height="21"/>
