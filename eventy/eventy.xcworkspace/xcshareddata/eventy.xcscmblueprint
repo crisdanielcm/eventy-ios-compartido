@@ -1,17 +1,19 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "80584B63C369775E4F9C1D652E2AE899901248FA",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C5310DE75CEBDBD8FAC097EF2F2D16BC4603C896",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : 9223372036854775807,
+    "C5310DE75CEBDBD8FAC097EF2F2D16BC4603C896" : 9223372036854775807,
     "80584B63C369775E4F9C1D652E2AE899901248FA" : 9223372036854775807,
+    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : 9223372036854775807,
     "67620B5EFA902936DF04070AF595B76AB0333747" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5E64B4E7-D257-4619-86EB-E3090B573F52",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : "eventy-ios\/eventy\/Kingfisher\/",
+    "C5310DE75CEBDBD8FAC097EF2F2D16BC4603C896" : "eventy-ios-compartido\/",
     "80584B63C369775E4F9C1D652E2AE899901248FA" : "eventy-ios\/",
+    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : "eventy-ios\/eventy\/Kingfisher\/",
     "67620B5EFA902936DF04070AF595B76AB0333747" : "eventy-ios\/eventy\/Alamofire\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "eventy",
@@ -32,6 +34,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aplikoapps\/evento-ios.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "80584B63C369775E4F9C1D652E2AE899901248FA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/crisdanielcm\/eventy-ios-compartido.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C5310DE75CEBDBD8FAC097EF2F2D16BC4603C896"
     }
   ]
 }
