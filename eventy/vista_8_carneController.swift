@@ -25,7 +25,7 @@ class vista_8_carneController: BaseViewController {
     var celular:String! = nil
     var navigation:UINavigationController! = nil
     let preference = UserDefaults.standard
-    
+    var nombreEvent:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addSlideMenuButton()
@@ -67,6 +67,7 @@ class vista_8_carneController: BaseViewController {
         
         self.imageCarne.layer.cornerRadius = self.imageCarne.frame.size.width/2;
         self.imageCarne.clipsToBounds = true
+        self.nombreEvento.text = self.nombreEvent
     }
 
     override func didReceiveMemoryWarning() {

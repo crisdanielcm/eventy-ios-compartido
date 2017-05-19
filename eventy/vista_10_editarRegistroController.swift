@@ -9,20 +9,25 @@
 import UIKit
 import Alamofire
 import Toast_Swift
+import MobileCoreServices
 
-class vista_10_agendaController: BaseViewController {
-
+class vista_10_agendaController: BaseViewController, UIAlertViewDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UIPopoverControllerDelegate {
+    
     @IBOutlet weak var image: UIImageView!
     var usuario = [String:Any]()
     var mensaje:String!
     var id_evento:Int!
     var nombre_evento:String!
     
+    @IBOutlet weak var btnClickMe: UIButton!
     @IBOutlet weak var cargo: UITextField!
     @IBOutlet weak var empresa: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var apellido: UITextField!
     @IBOutlet weak var nombre: UITextField!
+    
+    var picker:UIImagePickerController?=UIImagePickerController()
+    var popover:UIPopoverController?=nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +52,7 @@ class vista_10_agendaController: BaseViewController {
                 self.image.image = decodeImage
             }
         }
+        picker!.delegate=self
         // Do any additional setup after loading the view.
     }
 
@@ -84,8 +90,20 @@ class vista_10_agendaController: BaseViewController {
         
         preference.synchronize()
         
-        let parameter:Parameters = ["id_asistente": id!, "nombre": nombre!, "apellido": apellido!, "email": email!, "cargo": cargo!, "foto": strBase64, "id_empresa": id_emp!]
-        request("\(ip)/editar_datos/", method: .post,parameters: parameter, encoding: JSONEncoding.default).validate().responseJSON{ response in
+        
+        let parameter1:Parameters =
+        [
+            "id_asistente": id!,
+            "nombre": nombre!,
+            "apellido": apellido!,
+            "email": email!,
+            "cargo": cargo!,
+            "foto": strBase64,
+            "id_empresa": id_emp!
+        ]
+        
+        request("\(ip)/editar_datos/", method: .post,parameters: parameter1, encoding: JSONEncoding.default).validate().responseJSON {
+            response in
             switch response.result{
             case .success:
                 
@@ -103,8 +121,8 @@ class vista_10_agendaController: BaseViewController {
         do{
             let readableJSON = try (JSONSerialization.jsonObject(with: JSONData, options:JSONSerialization.ReadingOptions.mutableContainers) as? [String:Any] )!
             mensaje = readableJSON["mensaje"] as! String!
-            
-            let vistaevento = storyboard?.instantiateViewController(withIdentifier: "evento") as! eventoController
+            let storyboard2 = UIStoryboard(name: "PrimeraParte", bundle: nil)
+            let vistaevento = storyboard2.instantiateViewController(withIdentifier: "evento") as! eventoController
             let id = id_evento
             let nombre = nombre_evento 
             vistaevento.itemToShow = id
@@ -127,4 +145,80 @@ class vista_10_agendaController: BaseViewController {
 
     }
     
+    @IBAction func action(_ sender: UIButton) {
+        let alert:UIAlertController=UIAlertController(title: "Elegir Imagen", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        let cameraAction = UIAlertAction(title: "Camara", style: UIAlertActionStyle.default)
+        {
+            UIAlertAction in
+            self.openCamera()
+            
+        }
+        let gallaryAction = UIAlertAction(title: "Galeria", style: UIAlertActionStyle.default)
+        {
+            UIAlertAction in
+            self.openGallery()
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel)
+        {
+            UIAlertAction in
+            
+        }
+        
+        // Add the actions
+        picker?.delegate = self
+        alert.addAction(cameraAction)
+        alert.addAction(gallaryAction)
+        alert.addAction(cancelAction)
+        // Present the controller
+        if UIDevice.current.userInterfaceIdiom == .phone
+        {
+            self.present(alert, animated: true, completion: nil)
+        }
+        else
+        {
+            popover=UIPopoverController(contentViewController: alert)
+            popover!.present(from: btnClickMe.frame, in: self.view, permittedArrowDirections: UIPopoverArrowDirection.any, animated: true)
+        }
+
+    }
+    
+    func openCamera(){
+        if(UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera))
+        {
+            picker!.sourceType = UIImagePickerControllerSourceType.camera
+            self.present(picker!, animated: true, completion: nil)
+        }
+        else
+        {
+            openGallery()
+        }
+
+    }
+    
+    func openGallery(){
+        picker!.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        if UIDevice.current.userInterfaceIdiom == .phone
+        {
+            self.present(picker!, animated: true, completion: nil)
+        }
+        else
+        {
+            popover=UIPopoverController(contentViewController: picker!)
+            popover!.present(from: btnClickMe.frame, in: self.view, permittedArrowDirections: UIPopoverArrowDirection.any, animated: true)
+        }
+
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    {
+        picker .dismiss(animated: true, completion: nil)
+        image.image=info[UIImagePickerControllerOriginalImage] as? UIImage
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    {
+        self.dismiss(animated: true, completion: nil)
+    }
+   
+    
 }
+

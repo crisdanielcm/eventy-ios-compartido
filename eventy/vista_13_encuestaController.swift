@@ -102,6 +102,7 @@ class vista_13_encuestaController: BaseViewController, UIPageViewControllerDeleg
         let widthScreen = Int(self.subview.frame.width)
         let heightScreen = self.subview.frame.height
         var x = 0
+        var i = 0
         if(patrocinadores.count != 0){
             let widthImage = widthScreen/patrocinadores.count
             for item in patrocinadores {
@@ -113,13 +114,32 @@ class vista_13_encuestaController: BaseViewController, UIPageViewControllerDeleg
                 imageView.contentMode = UIViewContentMode.scaleAspectFit
                 imageView.kf.setImage(with: URL(string:logo), placeholder:nil)
                 imageView.frame = CGRect(x: x, y: Int(heightScreen)/8, width: widthImage, height: Int(Double(heightScreen)/1.3))
+                imageView.tag = i
+                let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+                imageView.isUserInteractionEnabled = true
+                imageView.addGestureRecognizer(tapGestureRecognizer)
                 subview.addSubview(imageView)
                 x = x + widthImage
+                i += 1
             }
             
         }
     }
-    
+    func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+        let tag = tappedImage.tag
+        let url:String = self.patrocinadores[tag]["url"] as! String
+        let url2 = URL(string:url)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url2!, options: [:], completionHandler: nil)
+        } else {
+            // Fallback on earlier versions
+            UIApplication.shared.openURL(url2!)
+        }
+        // Your action
+    }
+
     func pagesInit(){
         // Setup the pages
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
