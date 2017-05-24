@@ -61,19 +61,25 @@
                                 <rect key="frame" x="0.0" y="334" width="375" height="333"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.099919181029999998" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="ADVERTENCIA" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlP-dU-bIY">
-                                <rect key="frame" x="67" y="449" width="240" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="ADVERTENCIA" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlP-dU-bIY">
+                                <rect key="frame" x="134.5" y="448.5" width="106" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="NjA-iH-9Ez"/>
+                                    <constraint firstAttribute="height" constant="30" id="n7T-Oz-Jth"/>
+                                </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="Wifi, evento dato tipo de celular porfis itinerancia" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRa-v7-W8f">
-                                <rect key="frame" x="67" y="474" width="240" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Wifi, evento dato tipo de celular porfis itinerancia" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRa-v7-W8f">
+                                <rect key="frame" x="81.5" y="481.5" width="212" height="56.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="212" id="fM5-tG-rct"/>
+                                    <constraint firstAttribute="height" constant="56.5" id="gLw-Ta-h5M"/>
+                                </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -85,10 +91,13 @@
                                     <constraint firstAttribute="width" constant="47" id="64l-t3-5dU"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iji-AH-EcY">
-                                <rect key="frame" x="175" y="614" width="24" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iji-AH-EcY">
+                                <rect key="frame" x="175.5" y="614" width="24" height="24"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Uw0-8H-uVO"/>
+                                    <constraint firstAttribute="height" constant="24" id="zzZ-Lm-mwQ"/>
+                                </constraints>
                                 <state key="normal" image="Next"/>
                                 <state key="highlighted">
                                     <color key="titleColor" red="0.75938560519999998" green="0.74449569140000005" blue="0.74449569140000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -101,9 +110,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kEZ-0h-Gas" firstAttribute="centerX" secondItem="50L-12-vpw" secondAttribute="centerX" id="BAX-md-8AI"/>
+                            <constraint firstItem="IlP-dU-bIY" firstAttribute="centerX" secondItem="50L-12-vpw" secondAttribute="centerX" id="BeJ-2f-mE6"/>
                             <constraint firstItem="kEZ-0h-Gas" firstAttribute="top" secondItem="2yu-o9-EmL" secondAttribute="bottom" constant="119" id="Cxb-sw-b5f"/>
+                            <constraint firstItem="PRa-v7-W8f" firstAttribute="centerX" secondItem="50L-12-vpw" secondAttribute="centerX" id="K3E-1s-5P3"/>
                             <constraint firstItem="qU2-Ht-UpP" firstAttribute="top" secondItem="GtX-5t-43l" secondAttribute="bottom" id="LpY-AE-Ye6"/>
+                            <constraint firstItem="Iji-AH-EcY" firstAttribute="centerX" secondItem="50L-12-vpw" secondAttribute="centerX" id="PdC-dS-Lxg"/>
                             <constraint firstItem="GtX-5t-43l" firstAttribute="leading" secondItem="50L-12-vpw" secondAttribute="leading" id="QJh-cm-o8R"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Iji-AH-EcY" secondAttribute="bottom" constant="29" id="S9R-xu-RJ7"/>
+                            <constraint firstItem="qU2-Ht-UpP" firstAttribute="top" secondItem="PRa-v7-W8f" secondAttribute="bottom" constant="129" id="VGq-9a-rFL"/>
+                            <constraint firstItem="PRa-v7-W8f" firstAttribute="top" secondItem="IlP-dU-bIY" secondAttribute="bottom" constant="2.5" id="d5e-VI-cu2"/>
                             <constraint firstAttribute="trailing" secondItem="GtX-5t-43l" secondAttribute="trailing" id="v4Y-B1-jmn"/>
                             <constraint firstItem="GtX-5t-43l" firstAttribute="top" secondItem="kEZ-0h-Gas" secondAttribute="bottom" constant="94" id="yyv-MZ-ssf"/>
                         </constraints>
@@ -607,7 +622,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                 <navigationController storyboardIdentifier="vistamenu" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fqa-iR-shn" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nqs-Hr-5jO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nqs-Hr-5jO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
