@@ -38,9 +38,15 @@ class vista_10_agendaController: BaseViewController, UIAlertViewDelegate,UIImage
         self.image.clipsToBounds = true
         
         empresa.text = usuario["cargo"] as! String!
+        
         email.text = usuario["email"] as! String!
         nombre.text = usuario["nombre"] as! String!
         apellido.text = usuario["apellido"] as! String!
+        border(textField: empresa)
+        border(textField: email!)
+        border(textField: nombre)
+        border(textField: apellido)
+        
         let foto:String = usuario["foto"] as! String!
         if(foto != ""){
             if(foto.contains("http://")){
@@ -54,6 +60,16 @@ class vista_10_agendaController: BaseViewController, UIAlertViewDelegate,UIImage
         }
         picker!.delegate=self
         // Do any additional setup after loading the view.
+    }
+    func border(textField:UITextField){
+        let border = CALayer()
+        let width = CGFloat(2.0)
+        border.borderColor = UIColor.darkGray.cgColor
+        border.frame = CGRect(x: 0, y: textField.frame.size.height - width, width:  textField.frame.size.width, height: textField.frame.size.height)
+        
+        border.borderWidth = width
+        textField.layer.addSublayer(border)
+        textField.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
