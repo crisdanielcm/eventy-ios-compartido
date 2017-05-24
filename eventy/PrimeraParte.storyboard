@@ -140,10 +140,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51h-qp-5fg">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51h-qp-5fg">
                                 <rect key="frame" x="30" y="481" width="315" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="51h-qp-5fg" secondAttribute="height" multiplier="21:2" id="g4o-Xr-h5U"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
                                 <state key="normal" title="TERMINOS Y CONDICIONES"/>
                                 <connections>
@@ -155,15 +157,18 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACEPTO TERMINOS Y CONDICIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3x-UE-lKT">
                                 <rect key="frame" x="68" y="510" width="225" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="y3x-UE-lKT" secondAttribute="height" multiplier="75:7" id="oXr-og-qEW"/>
+                                    <constraint firstAttribute="width" secondItem="y3x-UE-lKT" secondAttribute="height" multiplier="75:7" id="8je-2n-I2Z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
                                 <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-eC-vdN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFX-eC-vdN">
                                 <rect key="frame" x="284" y="513" width="15" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="460-U9-kT8"/>
+                                    <constraint firstAttribute="width" constant="15" id="ixX-Wv-jDp"/>
+                                </constraints>
                                 <state key="normal" image="vista_1_recuadro_terminos"/>
                                 <state key="highlighted" image="vista_1_check"/>
                                 <connections>
@@ -174,7 +179,7 @@
                                 <rect key="frame" x="30" y="552" width="315" height="58"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.08235294118" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="lSR-2z-TS6"/>
+                                    <constraint firstAttribute="width" secondItem="21o-G8-4fc" secondAttribute="height" multiplier="315:58" id="MKr-C4-Ipa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Continuar">
@@ -184,41 +189,56 @@
                                     <action selector="continuarPressed:" destination="2aY-RE-R4B" eventType="touchUpInside" id="0P1-m2-neR"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="¡Gracias por unirse a Eventy!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1gy-Ih-n8A">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="¡Gracias por unirse a Eventy!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1gy-Ih-n8A">
                                 <rect key="frame" x="0.0" y="115" width="375" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.66000000000000003" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YYP-Wt-gxu">
-                                <rect key="frame" x="48" y="169" width="279" height="304"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Disfrute de esta App al escuchar traducciones simultáneas de diferentes eventos; le permitirá realizar preguntas al conferencista invitado, responder encuestas e interactuar con los demás asistentes.
-
-Por medio de un carnet virtual podrá identificarse y acceder a las diferentes actividades relacionadas al evento, conocer la agenda, tener acceso a presentaciones y grabaciones y conocer información detallada sobre los organizadores y patrocinadores del evento.</string>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.66163793100000001" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¡Hola!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5h-4D-FTc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="¡Hola!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5h-4D-FTc">
                                 <rect key="frame" x="0.0" y="67" width="375" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TXX-Yl-xDb">
+                                <rect key="frame" x="48" y="182" width="279" height="286"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YYP-Wt-gxu">
+                                        <rect key="frame" x="8" y="0.0" width="263" height="286"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Disfrute de esta App al escuchar traducciones simultáneas de diferentes eventos; le permitirá realizar preguntas al conferencista invitado, responder encuestas e interactuar con los demás asistentes.
+
+Por medio de un carnet virtual podrá identificarse y acceder a las diferentes actividades relacionadas al evento, conocer la agenda, tener acceso a presentaciones y grabaciones y conocer información detallada sobre los organizadores y patrocinadores del evento.</string>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.66163793100000001" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="21o-G8-4fc" firstAttribute="top" secondItem="y3x-UE-lKT" secondAttribute="bottom" constant="21" id="295-dy-mSF"/>
-                            <constraint firstItem="21o-G8-4fc" firstAttribute="leading" secondItem="lP5-ea-nrV" secondAttribute="leadingMargin" constant="14" id="Y4Y-uu-YxK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="y3x-UE-lKT" secondAttribute="trailing" constant="66" id="ZUw-c3-5bB"/>
-                            <constraint firstItem="y3x-UE-lKT" firstAttribute="leading" secondItem="lP5-ea-nrV" secondAttribute="leadingMargin" constant="52" id="bQ0-Cj-W2Q"/>
-                            <constraint firstItem="WLr-99-69s" firstAttribute="top" secondItem="21o-G8-4fc" secondAttribute="bottom" constant="57" id="jaY-uY-9Pk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="21o-G8-4fc" secondAttribute="trailing" constant="14" id="wEF-5b-n7D"/>
+                            <constraint firstItem="TXX-Yl-xDb" firstAttribute="top" secondItem="lP5-ea-nrV" secondAttribute="top" constant="182" id="4sC-1q-HP3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="51h-qp-5fg" secondAttribute="trailing" constant="14" id="8jO-Ch-p5G"/>
+                            <constraint firstItem="WLr-99-69s" firstAttribute="top" secondItem="21o-G8-4fc" secondAttribute="bottom" constant="57" id="Nda-Bv-Gfr"/>
+                            <constraint firstItem="TXX-Yl-xDb" firstAttribute="centerX" secondItem="51h-qp-5fg" secondAttribute="centerX" id="S95-Nw-SxI"/>
+                            <constraint firstItem="TXX-Yl-xDb" firstAttribute="centerX" secondItem="J5h-4D-FTc" secondAttribute="centerX" id="Uge-A8-7c4"/>
+                            <constraint firstItem="TXX-Yl-xDb" firstAttribute="top" secondItem="1gy-Ih-n8A" secondAttribute="bottom" constant="27" id="VFh-XT-jfR"/>
+                            <constraint firstItem="TXX-Yl-xDb" firstAttribute="centerX" secondItem="1gy-Ih-n8A" secondAttribute="centerX" id="X5q-rK-vtK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="21o-G8-4fc" secondAttribute="trailing" constant="14" id="fCH-Fa-pti"/>
+                            <constraint firstItem="PFX-eC-vdN" firstAttribute="top" secondItem="y3x-UE-lKT" secondAttribute="bottom" constant="-18" id="gdf-5S-aGQ"/>
+                            <constraint firstItem="21o-G8-4fc" firstAttribute="top" secondItem="y3x-UE-lKT" secondAttribute="bottom" constant="21" id="hE1-H1-oEf"/>
+                            <constraint firstItem="21o-G8-4fc" firstAttribute="leading" secondItem="lP5-ea-nrV" secondAttribute="leadingMargin" constant="14" id="jga-mF-yFC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y3x-UE-lKT" secondAttribute="trailing" constant="66" id="jzF-uM-zfa"/>
+                            <constraint firstItem="PFX-eC-vdN" firstAttribute="top" secondItem="51h-qp-5fg" secondAttribute="bottom" constant="2" id="mDA-Yn-dcW"/>
+                            <constraint firstItem="51h-qp-5fg" firstAttribute="top" secondItem="TXX-Yl-xDb" secondAttribute="bottom" constant="33" id="pCK-xn-YFX"/>
+                            <constraint firstItem="PFX-eC-vdN" firstAttribute="leading" secondItem="y3x-UE-lKT" secondAttribute="trailing" constant="-9" id="pPK-T5-lYm"/>
+                            <constraint firstItem="y3x-UE-lKT" firstAttribute="leading" secondItem="lP5-ea-nrV" secondAttribute="leadingMargin" constant="52" id="pw6-V0-zhi"/>
+                            <constraint firstItem="TXX-Yl-xDb" firstAttribute="leading" secondItem="lP5-ea-nrV" secondAttribute="leadingMargin" constant="32" id="sMx-i9-mcS"/>
+                            <constraint firstItem="51h-qp-5fg" firstAttribute="leading" secondItem="lP5-ea-nrV" secondAttribute="leadingMargin" constant="14" id="sYB-zH-Hn6"/>
                         </constraints>
                     </view>
                     <connections>
@@ -227,7 +247,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0Q-VY-woy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2436" y="90"/>
+            <point key="canvasLocation" x="-2436" y="89.505247376311857"/>
         </scene>
         <!--Terminosc Controller-->
         <scene sceneID="W4p-E4-Tog">
@@ -305,7 +325,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background-1" translatesAutoresizingMaskIntoConstraints="NO" id="2zQ-OQ-Ahr">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="-30" y="-667" width="435" height="1334"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SELECCIONE EL EVENTO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfC-KF-oXe">
@@ -315,7 +335,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="185" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jsY-ul-HAL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="185" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jsY-ul-HAL">
                                 <rect key="frame" x="0.0" y="111" width="375" height="556"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -363,7 +383,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                                 </connections>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imagoeventymenu" translatesAutoresizingMaskIntoConstraints="NO" id="5W3-4p-bM7">
-                                <rect key="frame" x="115" y="20" width="134" height="36"/>
+                                <rect key="frame" x="121" y="20" width="134" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf0-r1-I6L">
@@ -376,7 +396,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_icon_disclosure" translatesAutoresizingMaskIntoConstraints="NO" id="gec-4e-b5V">
-                                <rect key="frame" x="176" y="604" width="25" height="25"/>
+                                <rect key="frame" x="175" y="604" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -391,7 +411,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ig8-NV-RIb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3882" y="827"/>
+            <point key="canvasLocation" x="-3882.4000000000001" y="826.23688155922048"/>
         </scene>
         <!--Evento Controller-->
         <scene sceneID="ddT-9w-LUg">
@@ -406,15 +426,16 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="9dd-PZ-mzX">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="-14" y="-707" width="403" height="1374"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wlm-z4-qTX">
                                 <rect key="frame" x="0.0" y="67" width="375" height="504"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="87" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-D2-jTk">
+                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="87" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-D2-jTk">
                                         <rect key="frame" x="0.0" y="29" width="375" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <color key="sectionIndexTrackingBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -528,7 +549,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                                         </connections>
                                     </tableView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="botNext" translatesAutoresizingMaskIntoConstraints="NO" id="8hQ-EW-1pQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="31"/>
+                                        <rect key="frame" x="0.0" y="-126" width="375" height="157"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kNp-cr-6gT">
@@ -553,26 +574,23 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.21176470589999999" green="0.20392156859999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Festival de Aceleracion Internacional" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-ae-Um0">
+                                <rect key="frame" x="48" y="20" width="279" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="PATROCINADORES" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjR-xE-cew">
-                                <rect key="frame" x="18" y="579" width="153" height="29"/>
+                                <rect key="frame" x="12" y="581" width="172" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Festival de Aceleracion Internacional" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgD-ae-Um0">
-                                <rect key="frame" x="60" y="20" width="255" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="QbZ-D2-jTk" firstAttribute="width" secondItem="8bz-Ze-4av" secondAttribute="width" id="ksh-Gt-YZB"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="raX-tv-gH6">
                         <barButtonItem key="backBarButtonItem" title="m" id="eRg-YC-jmt"/>
@@ -596,7 +614,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ih-If-Q8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3183" y="826"/>
+            <point key="canvasLocation" x="-3183.1999999999998" y="825.33733133433293"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="geS-C8-tbS">
@@ -622,7 +640,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                 <navigationController storyboardIdentifier="vistamenu" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fqa-iR-shn" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nqs-Hr-5jO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nqs-Hr-5jO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -647,13 +665,11 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background-agenda" translatesAutoresizingMaskIntoConstraints="NO" id="rtb-2e-5sj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-agenda" translatesAutoresizingMaskIntoConstraints="NO" id="rtb-2e-5sj">
+                                <rect key="frame" x="-14" y="-668" width="403" height="1335"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="151" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-8i-QrK">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="151" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VXd-8i-QrK">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="agendaCell" rowHeight="155" id="2Ks-dv-iHB" customClass="agendaTableViewCell" customModule="eventy" customModuleProvider="target">
@@ -663,9 +679,8 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N8A-5R-1oM">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8A-5R-1oM">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4l5-Ui-ccg">
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
@@ -697,10 +712,12 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="N8A-5R-1oM" secondAttribute="height" multiplier="375:92" id="JQV-fV-adl"/>
+                                                    </constraints>
                                                 </view>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6b-Ry-c4c">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6b-Ry-c4c">
                                                     <rect key="frame" x="0.0" y="92" width="375" height="63"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6I-kg-iCR">
                                                             <rect key="frame" x="265" y="9" width="33" height="33"/>
@@ -751,8 +768,20 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.1333333333" green="0.59607843140000005" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="t6b-Ry-c4c" secondAttribute="height" multiplier="125:21" id="4oR-wH-c3y"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="N8A-5R-1oM" secondAttribute="trailing" id="Agv-ae-G9z"/>
+                                                <constraint firstItem="t6b-Ry-c4c" firstAttribute="top" secondItem="N8A-5R-1oM" secondAttribute="bottom" id="HjC-xc-YI6"/>
+                                                <constraint firstAttribute="trailing" secondItem="t6b-Ry-c4c" secondAttribute="trailing" id="MM0-q6-euX"/>
+                                                <constraint firstItem="t6b-Ry-c4c" firstAttribute="leading" secondItem="6Ho-FR-6CS" secondAttribute="leading" id="OEM-pm-Orz"/>
+                                                <constraint firstItem="N8A-5R-1oM" firstAttribute="leading" secondItem="6Ho-FR-6CS" secondAttribute="leading" id="QKg-EH-2G2"/>
+                                                <constraint firstAttribute="bottom" secondItem="t6b-Ry-c4c" secondAttribute="bottom" id="wZZ-Hx-sCv"/>
+                                                <constraint firstItem="N8A-5R-1oM" firstAttribute="top" secondItem="6Ho-FR-6CS" secondAttribute="top" id="zFT-Mp-Pvy"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
@@ -770,15 +799,28 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                                     <outlet property="delegate" destination="H2t-hS-4xI" id="vzy-aJ-Nfw"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Agenda en línea" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9m-PI-4Vx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agenda en línea" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9m-PI-4Vx">
                                 <rect key="frame" x="37" y="29" width="302" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z9m-PI-4Vx" secondAttribute="height" multiplier="151:12" id="yDZ-Vh-uWT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Z9m-PI-4Vx" firstAttribute="centerX" secondItem="xtm-CD-6mw" secondAttribute="centerX" id="GmX-3N-CCI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rtb-2e-5sj" secondAttribute="trailing" constant="-30" id="Jmi-eC-vFz"/>
+                            <constraint firstItem="VXd-8i-QrK" firstAttribute="top" secondItem="Z9m-PI-4Vx" secondAttribute="bottom" constant="11" id="WcE-vo-c9g"/>
+                            <constraint firstItem="ntM-am-35l" firstAttribute="top" secondItem="rtb-2e-5sj" secondAttribute="bottom" id="bjj-ut-ZMa"/>
+                            <constraint firstItem="ntM-am-35l" firstAttribute="top" secondItem="VXd-8i-QrK" secondAttribute="bottom" id="c3G-na-PXs"/>
+                            <constraint firstItem="rtb-2e-5sj" firstAttribute="leading" secondItem="xtm-CD-6mw" secondAttribute="leadingMargin" constant="-30" id="e2U-4M-ERs"/>
+                            <constraint firstAttribute="trailing" secondItem="VXd-8i-QrK" secondAttribute="trailing" id="nRK-Ky-alg"/>
+                            <constraint firstItem="VXd-8i-QrK" firstAttribute="leading" secondItem="xtm-CD-6mw" secondAttribute="leading" id="tgN-e7-ivu"/>
+                            <constraint firstItem="Z9m-PI-4Vx" firstAttribute="top" secondItem="eeh-Yu-7hg" secondAttribute="bottom" constant="9" id="vra-se-aLg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="G8j-jd-Zza">
                         <barButtonItem key="rightBarButtonItem" image="close_22" style="plain" id="4co-xS-YlB">
@@ -812,52 +854,62 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgroundTraductor" translatesAutoresizingMaskIntoConstraints="NO" id="MJd-I2-1eG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundTraductor" translatesAutoresizingMaskIntoConstraints="NO" id="MJd-I2-1eG">
+                                <rect key="frame" x="0.0" y="-667" width="750" height="1334"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MJd-I2-1eG" secondAttribute="height" multiplier="375:667" id="mxg-d0-9Ne"/>
+                                </constraints>
                             </imageView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jvA-7q-Nvh">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvA-7q-Nvh">
                                 <rect key="frame" x="0.0" y="616" width="375" height="51"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jvA-7q-Nvh" secondAttribute="height" multiplier="125:17" id="Mud-Wg-egO"/>
+                                </constraints>
                             </containerView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-tk-Gs5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K8E-tk-Gs5">
                                 <rect key="frame" x="0.0" y="575" width="375" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.21176470589999999" green="0.20392156859999999" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="K8E-tk-Gs5" secondAttribute="height" multiplier="375:43" id="HFd-Ti-oJr"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="PATROCINADORES" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pZ-co-Fig">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="PATROCINADORES" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pZ-co-Fig">
                                 <rect key="frame" x="16" y="582" width="153" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Cma-HZ-PF7"/>
+                                    <constraint firstAttribute="width" constant="153" id="a8i-Ld-yQO"/>
+                                </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1RS-ES-6rm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1RS-ES-6rm">
                                 <rect key="frame" x="0.0" y="109" width="375" height="458"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1RS-ES-6rm" secondAttribute="height" multiplier="375:458" id="q8c-1S-2Sr"/>
+                                </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tQb-Rq-T9x">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQb-Rq-T9x">
                                 <rect key="frame" x="0.0" y="65" width="375" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23921568630000001" green="0.2470588235" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tQb-Rq-T9x" secondAttribute="height" multiplier="375:56" id="IS1-4u-dgK"/>
+                                </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DiscPlayPause" translatesAutoresizingMaskIntoConstraints="NO" id="xeI-2o-zv1">
-                                <rect key="frame" x="0.0" y="208" width="375" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiscPlayPause" translatesAutoresizingMaskIntoConstraints="NO" id="xeI-2o-zv1">
+                                <rect key="frame" x="0.0" y="239" width="375" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xeI-2o-zv1" secondAttribute="height" multiplier="125:63" id="1U8-vT-XXY"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barravolumen" translatesAutoresizingMaskIntoConstraints="NO" id="rPy-iA-QlU">
-                                <rect key="frame" x="34" y="481" width="320" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fve-vi-mzt">
-                                <rect key="frame" x="53" y="476" width="273" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnt-hB-bnm">
-                                <rect key="frame" x="142" y="257" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnt-hB-bnm">
+                                <rect key="frame" x="142" y="288.5" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="PRD-cO-GRs"/>
+                                    <constraint firstAttribute="height" constant="90" id="pty-Ev-mX9"/>
+                                </constraints>
                                 <state key="normal" image="pause"/>
                                 <state key="highlighted" image="PLAY"/>
                                 <connections>
@@ -866,6 +918,31 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="MJd-I2-1eG" secondAttribute="trailing" constant="-391" id="2ng-6a-ul5"/>
+                            <constraint firstItem="tQb-Rq-T9x" firstAttribute="top" secondItem="PXr-Ee-xZV" secondAttribute="bottom" constant="45" id="7vi-LJ-kDJ"/>
+                            <constraint firstItem="jvA-7q-Nvh" firstAttribute="top" secondItem="1pZ-co-Fig" secondAttribute="bottom" constant="5" id="EBB-56-iSW"/>
+                            <constraint firstAttribute="trailing" secondItem="K8E-tk-Gs5" secondAttribute="trailing" id="GKF-Cv-cUm"/>
+                            <constraint firstItem="K8E-tk-Gs5" firstAttribute="leading" secondItem="nZt-B0-8fo" secondAttribute="leading" id="H4s-6P-mBZ"/>
+                            <constraint firstAttribute="trailing" secondItem="xeI-2o-zv1" secondAttribute="trailing" id="Hv9-Da-V3q"/>
+                            <constraint firstItem="K8E-tk-Gs5" firstAttribute="top" secondItem="1RS-ES-6rm" secondAttribute="bottom" constant="8" id="NEh-I6-dSv"/>
+                            <constraint firstItem="xeI-2o-zv1" firstAttribute="leading" secondItem="nZt-B0-8fo" secondAttribute="leading" id="PGL-Ev-NLS"/>
+                            <constraint firstAttribute="trailing" secondItem="jvA-7q-Nvh" secondAttribute="trailing" id="X4u-CN-ijN"/>
+                            <constraint firstItem="xeI-2o-zv1" firstAttribute="centerX" secondItem="nZt-B0-8fo" secondAttribute="centerX" id="X9z-t4-FNp"/>
+                            <constraint firstItem="1pZ-co-Fig" firstAttribute="leading" secondItem="nZt-B0-8fo" secondAttribute="leadingMargin" id="YPj-gb-v6O"/>
+                            <constraint firstItem="rS0-x1-5uN" firstAttribute="top" secondItem="MJd-I2-1eG" secondAttribute="bottom" id="bHA-yT-hzC"/>
+                            <constraint firstAttribute="trailing" secondItem="1RS-ES-6rm" secondAttribute="trailing" id="bfh-4c-lBU"/>
+                            <constraint firstItem="MJd-I2-1eG" firstAttribute="leading" secondItem="nZt-B0-8fo" secondAttribute="leadingMargin" constant="-16" id="d6k-bu-4ic"/>
+                            <constraint firstItem="cnt-hB-bnm" firstAttribute="centerX" secondItem="nZt-B0-8fo" secondAttribute="centerX" id="fmK-7r-IHG"/>
+                            <constraint firstItem="1RS-ES-6rm" firstAttribute="leading" secondItem="nZt-B0-8fo" secondAttribute="leading" id="frx-9J-Cj9"/>
+                            <constraint firstItem="xeI-2o-zv1" firstAttribute="centerY" secondItem="nZt-B0-8fo" secondAttribute="centerY" id="iQI-V1-aax"/>
+                            <constraint firstItem="jvA-7q-Nvh" firstAttribute="top" secondItem="K8E-tk-Gs5" secondAttribute="bottom" constant="-2" id="iS9-h8-gGt"/>
+                            <constraint firstAttribute="trailing" secondItem="tQb-Rq-T9x" secondAttribute="trailing" id="laB-dG-SaT"/>
+                            <constraint firstItem="jvA-7q-Nvh" firstAttribute="leading" secondItem="nZt-B0-8fo" secondAttribute="leading" id="lcy-VI-6dj"/>
+                            <constraint firstItem="rS0-x1-5uN" firstAttribute="top" secondItem="jvA-7q-Nvh" secondAttribute="bottom" id="q5A-AF-g72"/>
+                            <constraint firstItem="cnt-hB-bnm" firstAttribute="centerY" secondItem="nZt-B0-8fo" secondAttribute="centerY" id="uny-te-uHZ"/>
+                            <constraint firstItem="tQb-Rq-T9x" firstAttribute="leading" secondItem="nZt-B0-8fo" secondAttribute="leading" id="xts-zX-zhU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZiY-9g-Iqt">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="jVD-rX-NGV">
@@ -887,7 +964,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PPA-j9-LRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1689" y="826"/>
+            <point key="canvasLocation" x="-1690.4000000000001" y="825.33733133433293"/>
         </scene>
     </scenes>
     <resources>
@@ -905,7 +982,6 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
         <image name="Next" width="44" height="42"/>
         <image name="PLAY" width="201" height="201"/>
         <image name="backLogo" width="626" height="870"/>
-        <image name="barravolumen" width="662" height="40"/>
         <image name="botNext" width="750" height="157"/>
         <image name="close_22" width="22" height="21"/>
         <image name="divisionbotones" width="726" height="2"/>
