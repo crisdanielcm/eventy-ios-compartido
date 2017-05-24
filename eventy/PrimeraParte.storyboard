@@ -640,7 +640,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                 <navigationController storyboardIdentifier="vistamenu" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fqa-iR-shn" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Nqs-Hr-5jO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nqs-Hr-5jO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -155,14 +155,13 @@ class eventoController: BaseViewController, UITableViewDelegate, UITableViewData
     }
     
     func paserDataPatrocinadores(JSONData: Data){
-        
-        
         do{
             let readableJSON:NSArray = try (JSONSerialization.jsonObject(with: JSONData, options:JSONSerialization.ReadingOptions.mutableContainers) as? NSArray)!
             let widthScreen = Int(self.subview.frame.width)
             let heightScreen = self.subview.frame.height
             var x = 0
             let widthImage = widthScreen/readableJSON.count
+            var i:Int = 0
             for item in readableJSON {
                 let datos = try JSONSerialization.data(withJSONObject: item, options: JSONSerialization.WritingOptions.prettyPrinted)
                 
@@ -170,15 +169,19 @@ class eventoController: BaseViewController, UITableViewDelegate, UITableViewData
                 
                 let logo:String = itemJson["logo"] as! String
                 let urlImage = "\(ip)\(logo)"
-                let patrocinadores:[String:Any] = ["patrocinador":urlImage]
-                //let hipervinculo = itemJson["hipervinculo"] as! String
+                let hipervinculo = itemJson["hipervinculo"] as! String
+                let patrocinadores:[String:Any] = ["patrocinador":urlImage,"url":hipervinculo]
                 let imageView = UIImageView()
                 imageView.contentMode = UIViewContentMode.scaleAspectFit
                 imageView.kf.setImage(with: URL(string:urlImage), placeholder:nil)
+                imageView.tag = i
                 imageView.frame = CGRect(x: x, y: Int(heightScreen)/8, width: widthImage, height: Int(Double(heightScreen)/1.3))
+                let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+                imageView.isUserInteractionEnabled = true
+                imageView.addGestureRecognizer(tapGestureRecognizer)
                 subview.addSubview(imageView)
                 x = x + widthImage
-                
+                i += 1
                 //Evento click Image
                 /*let singleTap = UITapGestureRecognizer(target: self, action: Selector("tapDetected(hipervinculo)"))
                 singleTap.numberOfTapsRequired = 1 // you can change this value
@@ -191,6 +194,21 @@ class eventoController: BaseViewController, UITableViewDelegate, UITableViewData
         catch{
             print(error)
         }
+    }
+    
+    func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+        let tag = tappedImage.tag
+        let url:String = self.listPatrocinadores[tag]["url"] as! String
+        let url2 = URL(string:url)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url2!, options: [:], completionHandler: nil)
+        } else {
+            // Fallback on earlier versions
+            UIApplication.shared.openURL(url2!)
+        }
+        // Your action
     }
     
     /*//Evento de la imagen
@@ -280,22 +298,24 @@ class eventoController: BaseViewController, UITableViewDelegate, UITableViewData
                 self.navigationController?.pushViewController(vistaAgenda, animated: true)
             }
             if(indexPath.row == 1){
-                
-                let vistaCarnet = storyboard?.instantiateViewController(withIdentifier: "carnet") as! vista_8_carneController
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let vistaCarnet = storyBoard.instantiateViewController(withIdentifier: "carnet") as! vista_8_carneController
                 vistaCarnet.id_evento = self.itemToShow
                 vistaCarnet.celular = self.celular
+                vistaCarnet.nombreEvent = self.nombreEvento.text!
                 self.navigationController?.pushViewController(vistaCarnet, animated: true)
             }
             if(indexPath.row == 2){
                 
-                let vistaAsistentes = storyboard?.instantiateViewController(withIdentifier: "asistentes") as! vista_5_asistentesController
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let vistaAsistentes = storyBoard.instantiateViewController(withIdentifier: "asistentes") as! vista_5_asistentesController
                 vistaAsistentes.id_evento = self.itemToShow
                 vistaAsistentes.nombreEvento = self.nombreEvento.text
                 self.navigationController?.pushViewController(vistaAsistentes, animated: true)
             }
             if(indexPath.row == 3){
-                
-                let vistaEmpresas = storyboard?.instantiateViewController(withIdentifier: "empresas") as! vista_4_empresasController
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let vistaEmpresas = storyBoard.instantiateViewController(withIdentifier: "empresas") as! vista_4_empresasController
                 vistaEmpresas.id_evento = self.itemToShow
                 vistaEmpresas.nombreEvento = self.nombreEvento.text
                 self.navigationController?.pushViewController(vistaEmpresas, animated: true)
@@ -305,8 +325,8 @@ class eventoController: BaseViewController, UITableViewDelegate, UITableViewData
                 
             }
             if(indexPath.row == 5){
-                
-                let vistamemorias = storyboard?.instantiateViewController(withIdentifier: "memorias") as! vista_9_memoriasController
+                let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let vistamemorias = storyBoard.instantiateViewController(withIdentifier: "memorias") as! vista_9_memoriasController
                 vistamemorias.id_evento = self.itemToShow
                 self.navigationController?.pushViewController(vistamemorias, animated: true)
             }
