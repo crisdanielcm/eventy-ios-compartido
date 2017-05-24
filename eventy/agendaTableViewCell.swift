@@ -56,7 +56,9 @@ class agendaTableViewCell: UITableViewCell {
     
     @IBAction func encuestaPressed(_ sender: UIButton) {
         if (self.encuesta.isEnabled) {
-            let view = navigationController?.storyboard?.instantiateViewController(withIdentifier: "vista_13_encuestaController") as! vista_13_encuestaController
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+            let view = storyBoard.instantiateViewController(withIdentifier: "vista_13_encuestaController") as! vista_13_encuestaController
             view.id_actividad = self.id_actividad
             view.patrocinadores = self.patrocinadores
             self.navigationController?.navigationController?.pushViewController(view, animated: true)
@@ -66,7 +68,9 @@ class agendaTableViewCell: UITableViewCell {
     
     @IBAction func preguntaPressed(_ sender: UIButton) {
         if (self.preguntas.isEnabled) {
-            let view = navigationController?.storyboard?.instantiateViewController(withIdentifier: "preguntas") as! vista_14_preguntasController
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+            let view = storyBoard.instantiateViewController(withIdentifier: "preguntas") as! vista_14_preguntasController
             view.id_actividad = self.id_actividad
             view.id_evento = self.id_evento
             view.id_asistente = id_asistente
@@ -77,6 +81,8 @@ class agendaTableViewCell: UITableViewCell {
     @IBAction func audioPressed(_ sender: UIButton) {
         if (self.audio.isEnabled) {
             let view = navigationController?.storyboard?.instantiateViewController(withIdentifier: "audio") as! vista_6_traductorController
+            view.id_evento = self.id_evento
+            view.patrocinadores = self.patrocinadores
             self.navigationController?.navigationController?.pushViewController(view, animated: true)
         }
     }

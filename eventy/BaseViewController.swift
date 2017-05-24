@@ -42,7 +42,8 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
     }
     
     func openViewControllerBasedOnIdentifier(_ strIdentifier:String){
-        let destViewController : UIViewController = self.storyboard!.instantiateViewController(withIdentifier: strIdentifier)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "PrimeraParte", bundle:nil)
+        let destViewController : UIViewController = storyBoard.instantiateViewController(withIdentifier: strIdentifier)
         
         self.navigationController!.pushViewController(destViewController, animated: true)
         
@@ -87,8 +88,8 @@ class BaseViewController: UIViewController, SlideMenuDelegate {
         sender.isEnabled = false
         sender.tag = 10
         sender.isHidden = true
-
-        let menuVC : MenuViewController = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let menuVC : MenuViewController = storyBoard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
         menuVC.btnMenu = sender
         menuVC.delegate = self
         self.view.addSubview(menuVC.view)
