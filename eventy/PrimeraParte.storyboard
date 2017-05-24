@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -60,9 +60,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FooterBackground" translatesAutoresizingMaskIntoConstraints="NO" id="GtX-5t-43l">
                                 <rect key="frame" x="0.0" y="334" width="375" height="333"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.099919181029999998" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="GtX-5t-43l" secondAttribute="height" multiplier="125:111" id="a5F-kT-ZDx"/>
-                                </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="ADVERTENCIA" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlP-dU-bIY">
                                 <rect key="frame" x="67" y="449" width="240" height="30"/>
@@ -81,9 +78,12 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="kEZ-0h-Gas">
-                                <rect key="frame" x="163" y="139" width="47" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="kEZ-0h-Gas">
+                                <rect key="frame" x="164" y="139" width="47" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="3g4-Tc-ZYJ"/>
+                                    <constraint firstAttribute="width" constant="47" id="64l-t3-5dU"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iji-AH-EcY">
                                 <rect key="frame" x="175" y="614" width="24" height="24"/>
@@ -100,9 +100,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GtX-5t-43l" firstAttribute="leading" secondItem="50L-12-vpw" secondAttribute="leading" id="5cN-jx-IVc"/>
-                            <constraint firstItem="qU2-Ht-UpP" firstAttribute="top" secondItem="GtX-5t-43l" secondAttribute="bottom" id="Le1-zY-cm5"/>
-                            <constraint firstAttribute="trailing" secondItem="GtX-5t-43l" secondAttribute="trailing" id="opT-KN-cmg"/>
+                            <constraint firstItem="kEZ-0h-Gas" firstAttribute="centerX" secondItem="50L-12-vpw" secondAttribute="centerX" id="BAX-md-8AI"/>
+                            <constraint firstItem="kEZ-0h-Gas" firstAttribute="top" secondItem="2yu-o9-EmL" secondAttribute="bottom" constant="119" id="Cxb-sw-b5f"/>
+                            <constraint firstItem="qU2-Ht-UpP" firstAttribute="top" secondItem="GtX-5t-43l" secondAttribute="bottom" id="LpY-AE-Ye6"/>
+                            <constraint firstItem="GtX-5t-43l" firstAttribute="leading" secondItem="50L-12-vpw" secondAttribute="leading" id="QJh-cm-o8R"/>
+                            <constraint firstAttribute="trailing" secondItem="GtX-5t-43l" secondAttribute="trailing" id="v4Y-B1-jmn"/>
+                            <constraint firstItem="GtX-5t-43l" firstAttribute="top" secondItem="kEZ-0h-Gas" secondAttribute="bottom" constant="94" id="yyv-MZ-ssf"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -113,7 +116,6 @@
         <!--Vista15 terminos Inicio Controller-->
         <scene sceneID="lIo-Pm-jP0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i0Q-VY-woy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="terminosI" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2aY-RE-R4B" customClass="vista_15_terminosInicioController" customModule="eventy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="l5g-UF-fXb"/>
@@ -135,9 +137,11 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ACEPTO TERMINOS Y CONDICIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3x-UE-lKT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACEPTO TERMINOS Y CONDICIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3x-UE-lKT">
                                 <rect key="frame" x="68" y="510" width="225" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="y3x-UE-lKT" secondAttribute="height" multiplier="75:7" id="oXr-og-qEW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
                                 <color key="textColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -151,10 +155,12 @@
                                     <action selector="pressed:" destination="2aY-RE-R4B" eventType="touchUpInside" id="XW3-cZ-xXO"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21o-G8-4fc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21o-G8-4fc">
                                 <rect key="frame" x="30" y="552" width="315" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.08235294118" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="lSR-2z-TS6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Continuar">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -191,18 +197,26 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="21o-G8-4fc" firstAttribute="top" secondItem="y3x-UE-lKT" secondAttribute="bottom" constant="21" id="295-dy-mSF"/>
+                            <constraint firstItem="21o-G8-4fc" firstAttribute="leading" secondItem="lP5-ea-nrV" secondAttribute="leadingMargin" constant="14" id="Y4Y-uu-YxK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y3x-UE-lKT" secondAttribute="trailing" constant="66" id="ZUw-c3-5bB"/>
+                            <constraint firstItem="y3x-UE-lKT" firstAttribute="leading" secondItem="lP5-ea-nrV" secondAttribute="leadingMargin" constant="52" id="bQ0-Cj-W2Q"/>
+                            <constraint firstItem="WLr-99-69s" firstAttribute="top" secondItem="21o-G8-4fc" secondAttribute="bottom" constant="57" id="jaY-uY-9Pk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="21o-G8-4fc" secondAttribute="trailing" constant="14" id="wEF-5b-n7D"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="check" destination="PFX-eC-vdN" id="quf-eT-St0"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0Q-VY-woy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2436" y="90"/>
         </scene>
         <!--Terminosc Controller-->
         <scene sceneID="W4p-E4-Tog">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N9Y-xE-RIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="terminosc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="289-J4-2i9" customClass="terminoscController" customModule="eventy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jbu-Ai-RBf"/>
@@ -259,6 +273,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9Y-xE-RIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1689" y="90"/>
         </scene>
@@ -383,9 +398,8 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                                 <rect key="frame" x="0.0" y="67" width="375" height="504"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="87" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-D2-jTk">
+                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" ambiguous="YES" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="87" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-D2-jTk">
                                         <rect key="frame" x="0.0" y="29" width="375" height="84"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <color key="sectionIndexTrackingBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -541,6 +555,9 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QbZ-D2-jTk" firstAttribute="width" secondItem="8bz-Ze-4av" secondAttribute="width" id="ksh-Gt-YZB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="raX-tv-gH6">
                         <barButtonItem key="backBarButtonItem" title="m" id="eRg-YC-jmt"/>
@@ -569,7 +586,6 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
         <!--View Controller-->
         <scene sceneID="geS-C8-tbS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wu8-5u-yVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="gGO-RC-Ji6" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dUl-VV-5Zd"/>
@@ -581,6 +597,7 @@ Por medio de un carnet virtual podrá identificarse y acceder a las diferentes a
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wu8-5u-yVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3183" y="1255"/>
         </scene>
